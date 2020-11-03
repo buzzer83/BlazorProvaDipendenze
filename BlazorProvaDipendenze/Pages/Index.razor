@@ -1,0 +1,14 @@
+﻿@page "/"
+@inject BlazorProvaDipendenze.Data.IScopedServizio _scopedServizio;
+
+<h1>Blazor Service Lifetimes</h1>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <li>Servizio - @_scopedServizio.ServiceId</li>
+        </ul>
+    </div>
+</div>
