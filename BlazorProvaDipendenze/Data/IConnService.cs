@@ -2,9 +2,8 @@
 
 namespace BlazorProvaDipendenze.Data
 {
-    public interface IScopedServizio
+    public interface IConnService
     {
-        IConnessioneServizio DbSing { get; }
         Guid ServiceId { get; set; }
     }
 }

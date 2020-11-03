@@ -5,21 +5,16 @@ using System.Threading.Tasks;
 
 namespace BlazorProvaDipendenze.Data
 {
-    public class ScopedServizio : IScopedServizio
+    public class ScopedService : IScopedServie
     {
 
         public Guid ServiceId { get; set; }
-        public IConnessioneServizio DbSing { get; }
+        public IConnService DbSing { get; }
 
-        public ScopedServizio(IConnessioneServizio dbSing)
+        public ScopedService(IConnService dbSing)
         {
-            Console.WriteLine("cotruttore");
+            Console.WriteLine("scoped 1");
             DbSing = dbSing ?? throw new ArgumentNullException(nameof(dbSing));
-            Leggo();
-        }
-        private void Leggo()
-        {
-            Console.WriteLine("leggo");
             ServiceId = DbSing.ServiceId;
         }
     }

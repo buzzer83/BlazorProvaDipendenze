@@ -28,8 +28,8 @@ namespace BlazorProvaDipendenze
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<IConnessioneServizio, ConnessioneServizio>();
-            services.AddScoped<IScopedServizio, ScopedServizio>();
+            services.AddSingleton<IConnService, ConnService>();
+            services.AddScoped<IScopedServie, ScopedService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

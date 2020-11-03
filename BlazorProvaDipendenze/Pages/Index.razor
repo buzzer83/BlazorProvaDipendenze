@@ -1,5 +1,5 @@
 ﻿@page "/"
-@inject BlazorProvaDipendenze.Data.IScopedServizio _scopedServizio;
+@inject BlazorProvaDipendenze.Data.IScopedServie _scopedService;
 
 <h1>Blazor Service Lifetimes</h1>
 
@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-md-12">
         <ul>
-            <li>Servizio - @_scopedServizio.ServiceId</li>
+            <li>Service - @_scopedService.ServiceId</li>
         </ul>
     </div>
 </div>

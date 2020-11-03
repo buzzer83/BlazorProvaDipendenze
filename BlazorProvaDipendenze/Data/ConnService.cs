@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace BlazorProvaDipendenze.Data
 {
-    public class ConnessioneServizio : IConnessioneServizio
+    public class ConnService : IConnService
     {
         public Guid ServiceId { get; set; }
 
-        public ConnessioneServizio()
+        public ConnService()
         {
             Console.WriteLine("singleton");
             ServiceId = Guid.NewGuid();
